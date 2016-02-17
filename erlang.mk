@@ -9,6 +9,7 @@ erlang.mk: bootstrap
 	cd $(ERLANG_MK_BUILD_DIR) && $(MAKE)
 	cp $(ERLANG_MK_BUILD_DIR)/erlang.mk ./erlang.mk
 	rm -rf $(ERLANG_MK_BUILD_DIR)
+	git update-index --assume-unchanged ./erlang.mk
 
 .PHONY: bootstrap
 bootstrap: ;
