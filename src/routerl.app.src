@@ -1,0 +1,13 @@
+{application, routerl, [
+    {description, "Erlang message router."},
+    {vsn, "0.1.0"},
+    {id, "git"},
+    {modules, []},
+    {registered, [ruterl_sup]},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {mod, {routerl_app, []}},
+    {env, []}
+]}.
